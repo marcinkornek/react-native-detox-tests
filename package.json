@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
+		"start": "node node_modules/react-native/local-cli/cli.js start",
 		"android": "react-native run-android",
 		"ios": "react-native run-ios",
 		"lint": "eslint app",
@@ -11,11 +11,13 @@
 		"clean": "rm -rf $TMPDIR/react-* && watchman watch-del-all && yarn cache clean"
 	},
 	"dependencies": {
+		"prop-types": "^15.6.0",
 		"react": "16.0.0",
 		"react-native": "0.50.4",
 		"react-redux": "^5.0.6",
 		"redux": "^3.7.2",
-		"redux-thunk": "^2.2.0"
+		"redux-thunk": "^2.2.0",
+		"remote-redux-devtools": "^0.5.12"
 	},
 	"devDependencies": {
 		"babel-eslint": "^8.0.2",
