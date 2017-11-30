@@ -1,12 +1,20 @@
-import React from 'react';
-import { Text } from 'react-native';
 import { Provider } from 'react-redux';
-import store from './store';
+import { Navigation } from 'react-native-navigation';
+import registerScreens from 'DetoxTest/app/screens';
+import store from 'DetoxTest/app/store';
 
-const App = () => (
-  <Provider store={store}>
-    <Text>Beer</Text>
-  </Provider>
-);
+registerScreens(store, Provider);
+
+const navigatorStyle = {};
+
+const App = Navigation.startSingleScreenApp({
+  screen: {
+    screen: 'DetoxTest.Home',
+    navigatorStyle,
+  },
+  appStyle: {
+    orientation: 'portrait',
+  },
+});
 
 export default App;
