@@ -3840,6 +3840,10 @@ react-devtools-core@^2.5.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
+react-native-interactable@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/react-native-interactable/-/react-native-interactable-0.1.7.tgz#c785688ea6ec7c4ef443e715d145c6862ae210da"
+
 react-native-navigation@^1.1.296:
   version "1.1.296"
   resolved "https://registry.yarnpkg.com/react-native-navigation/-/react-native-navigation-1.1.296.tgz#7a925612938edaa3930ed5f723aba2ef7d6841b4"
