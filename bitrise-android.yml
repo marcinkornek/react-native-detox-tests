@@ -142,6 +142,7 @@ workflows:
       - bootstrap-dotenv
       - bootstrap-react-native
       - test-react-native
+      - archive-gradle
     after_run:
       - cache-push
       - deploy-bitriseio
