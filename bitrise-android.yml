@@ -208,9 +208,11 @@ workflows:
       - react-native-bundle:
           inputs:
             - platform: android
+            - entry_file: index.js
       - npm:
           inputs:
             - command: test
+            - gradlew_file_path: $GRADLE_W_PATH
 
   # Assemble and code sign an app using `gradle` command.
 
